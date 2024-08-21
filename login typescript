@@ -64,3 +64,13 @@ console.log("teste login 2" + r2)
 
 
 //a runcao esta dando somente true, arrumar mais tarde
+
+
+
+/* exercicio 
+criar 10 credenciais e colocar num array;vetor chamado bloqueadas
+criar mais 10 credenciais distintas e colocar em outro aray;vetor chamando elas de validas 
+atencao: vc tera que um vetor com credenciais invalidas.
+modificar a funcao login para que ao recever uma credencial, se ela for encontrada no vetor valida retorne true
+se for encontrada no vetor bloqueadas retorne false e, 
+se nao for encontrada em nenhum dos vetores reotrne false tambem
