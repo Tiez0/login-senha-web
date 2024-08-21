@@ -1,0 +1,66 @@
+// tipos estruturados
+ type Pessoa = {
+    nome: string,
+    idade: number, 
+ }
+// jeito comum de inicializar uma variavel do tipo Pessoa
+ var p1: Pessoa = {
+    nome: "Joao",
+    idade: 20
+ };
+
+ var p2: Pessoa = {
+    nome: "Pedro",
+    idade: 19
+ }
+
+ // definindo outro tipo para treinar
+ type Disciplina = {
+    nome: string,
+    cargaHoraria: number,
+    nomeProfessor?: string | boolean;
+ }
+
+ var disc1: Disciplina = {
+    nome: "Web",
+    cargaHoraria: 40
+ }
+
+ disc1.nomeProfessor = "matheus"
+ disc1.nomeProfessor = undefined;
+
+ // exemplo de undifined 
+ //var xpto;
+ //console.log(xpto)
+ 
+ type Credencial = {
+    email: string;
+    senha: string;
+ };
+
+ function autenticar(c: Credencial) : boolean{
+    (c.email === "admin@dominio.com.br") &&
+    (c.senha === "1234")
+    return true;
+     }
+
+
+
+var c1: Credencial = {
+    email: "matheus@teste.com.br",
+    senha: "abcd"
+}
+
+const r1: boolean = autenticar(c1)
+console.log ("teste login 1" + r1);
+
+var c2: Credencial = {
+    email: "admin@dominio.com.br",
+    senha: "1234"
+}
+
+const r2: boolean = autenticar(c2);
+console.log("teste login 2" + r2)
+
+
+//a runcao esta dando somente true, arrumar mais tarde
